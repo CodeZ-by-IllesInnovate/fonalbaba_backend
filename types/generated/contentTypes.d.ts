@@ -491,6 +491,9 @@ export interface ApiMintakMintak extends Struct.CollectionTypeSchema {
       'api::mintak.mintak'
     > &
       Schema.Attribute.Private;
+    price: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<0>;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.String &
       Schema.Attribute.Required &

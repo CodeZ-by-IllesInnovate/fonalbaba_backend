@@ -29,14 +29,19 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
+      ]
+    },
+    "price": {
+      "type": "integer",
+      "default": 0,
       "required": true
     }
   }
